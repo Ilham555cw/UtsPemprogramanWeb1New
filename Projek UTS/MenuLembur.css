@@ -1,0 +1,149 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f5f6fa;
+  }
+  
+  .navbar {
+    width: 250px;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sidebar-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar-list-item {
+    margin: 15px 0;
+  }
+  
+  .sidebar-list-item a {
+    color: #ecf0f1;
+    text-decoration: none;
+    display: block;
+    padding: 12px 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sidebar-list-item a:hover {
+    background-color: #34495e;
+  }
+  
+  /* Content area styling */
+  main {
+    flex-grow: 1;
+    padding: 20px 40px;
+  }
+  
+  main h1 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  main input[type="text"] {
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .table-container {
+    margin-top: 10px;
+  }
+  
+  .add-button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  .add-button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Table styling */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ecf0f1;
+  }
+  
+  th {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    font-weight: bold;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f8f9fa;
+  }
+  
+  tr:hover {
+    background-color: #f1f2f6;
+  }
+  
+  td a {
+    color: #3498db;
+    text-decoration: none;
+  }
+  
+  td a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Status colors */
+  td:last-child {
+    font-weight: bold;
+  }
+  
+  td:last-child:contains('Disetujui') {
+    color: green;
+  }
+  
+  td:last-child:contains('Menunggu Konfirmasi') {
+    color: orange;
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .navbar {
+      display: none;
+    }
+  
+    main {
+      padding: 20px;
+    }
+  
+    table, th, td {
+      font-size: 14px;
+    }
+  }
+  

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistem Informasi Manajemen Karyawan</title>
+  <link rel="stylesheet" href="MenuKaryawan.css">
+</head>
+<body>
+  <nav class="navbar">
+    <ul class="sidebar-list">
+      <li class="sidebar-list-item">
+          <a href="MenuDashboard.html" target="_blank">
+              <span class="material-icons-outlined"></span> Dashboard
+          </a>
+      </li>
+      <li class="sidebar-list-item">
+          <a href="MenuKaryawan.html" target="_blank">
+              <span class="material-icons-outlined"></span> Karyawan
+          </a>
+      </li>
+      <li class="sidebar-list-item">
+          <a href="MenuJabatan.html" target="_blank">
+              <span class="material-icons-outlined"></span> Jabatan
+          </a>
+      </li>
+      <li class="sidebar-list-item">
+          <a href="MenuDivisi.html" target="_blank">
+              <span class="material-icons-outlined"></span> Divisi
+          </a>
+      </li>
+      <li class="sidebar-list-item">
+          <a href="MenuAbsensi.html" target="_blank">
+              <span class="material-icons-outlined"></span> Absensi
+          </a>
+      </li>
+      <li class="sidebar-list-item">
+          <a href="MenuIzin.html" target="_blank">
+              <span class="material-icons-outlined"></span> Izin
+          </a>
+      </li>
+      <li class="sidebar-list-item">
+          <a href="MenuLembur.html" target="_blank">
+              <span class="material-icons-outlined"></span> Lembur
+          </a>
+      </li>
+  </ul>
+    </nav>
+
+  <div class="container">
+    <h1>Dashboard</h1>
+    <h2>Data Karyawan</h2>
+
+    <div class="table-container">
+      <button class="add-button" onclick="window.location.href='MenuForm.html'">  + Tambah Karyawan
+      </button>
+      <input type="text" placeholder="Cari karyawan..." class="search">
+      <table>
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Kode</th>
+            <th>Nama</th>
+            <th>Email</th>
+            <th>Alamat</th>
+            <th>Jabatan</th>
+            <th>Aksi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>K001</td>
+            <td>Yovan Fiqri</td>
+            <td>yt@gmail.com</td>
+            <td>Jl.percetakan Negara No.45.Gang.J.Rt001/Rw09 Cempaka Putih</td>
+            <td>Staff</td>
+            <td><a href="#">Edit</a> <a href="#">Delete</a> <a href="#">Lihat</a></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>K002</td>
+          <td>Renate Nindya</td>
+          <td>rennindyaa@gmail.com</td>
+          <td>Solo</td>
+          <td>Kepala Bagian</td>
+          <td><a href="#">Edit</a> <a href="#">Delete</a> <a href="#">Lihat</a></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>K003</td>
+        <td>Nurachman</td>
+        <td>nurachman@gmail.com</td>
+        <td>Parung</td>
+        <td></td>
+        <td><a href="#">Edit</a> <a href="#">Delete</a> <a href="#">Lihat</a></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>K004</td>
+      <td>Tatang Sutarman</td>
+      <td>ts@gmail.com</td>
+      <td>Jl.Kimia No 20</td>
+      <td>Staff</td>
+      <td><a href="#">Edit</a> <a href="#">Delete</a> <a href="#">Lihat</a></td>
+  </tr>
+          </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

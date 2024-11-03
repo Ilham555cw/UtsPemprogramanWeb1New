@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width,initial-scale=1.0" name="viewport" />
+    <title>Menu Dashboard</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
+    <link href="MenuDashboard.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="grid-container">
+        <header class="header">
+            <div class="menu-icon" onclick="openSidebar()">
+                <span class="material-icons-outlined">menu</span>
+            </div>
+            <div class="header-left">
+                <span class="material-icons-outlined">search</span>
+            </div>
+            <div class="header-right">
+                <span class="material-icons-outlined">notifications</span>
+                <span class="material-icons-outlined">email</span>
+                <span class="material-icons-outlined">account_circle</span>
+            </div>
+        </header>
+        <aside id="sidebar">
+            <div class="sidebar-title">
+                <div class="sidebar-brand">
+                    <span class="material-icons-outlined">shopping_cart</span> Administrator
+                </div>
+                <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+            </div>
+            <ul class="sidebar-list">
+                <li class="sidebar-list-item">
+                    <a href="MenuDashboard.html" target="_blank">
+                        <span class="material-icons-outlined">dashboard</span> Dashboard
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="MenuKaryawan.html" target="_blank">
+                        <span class="material-icons-outlined">inventory_2</span> Karyawan
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="MenuJabatan.html" target="_blank">
+                        <span class="material-icons-outlined">category</span> Jabatan
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="MenuDivisi.html" target="_blank">
+                        <span class="material-icons-outlined">groups</span> Divisi
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="MenuAbsensi.html" target="_blank">
+                        <span class="material-icons-outlined">fact_check</span> Absensi
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="MenuIzin.html" target="_blank">
+                        <span class="material-icons-outlined">poll</span> Izin
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="MenuLembur.html" target="_blank">
+                        <span class="material-icons-outlined">settings</span> Lembur
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <main class="main-container">
+            <div class="main-title">
+                <h1>Sistem Informasi Manajemen Karyawan</h1>
+                <h2>Admin Dasboard</h2>
+            </div>
+            <div class="main-cards">
+                <div class="card">
+                    <div class="card-inner">
+                        <h3>Data Pegawai</h3>
+                        <span class="material-icons-outlined">inventory_2</span>
+                    </div>
+                    <h1>13</h1>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <h3>Absensi Hari Ini 11 May 2023</h3>
+                        <span class="material-icons-outlined">category</span>
+                    </div>
+                    <h1>0</h1>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <h3>Izin Menunggu Konfirmasi</h3>
+                        <span class="material-icons-outlined">groups</span>
+                    </div>
+                    <h1>2</h1>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <h3>Lembur Menunggu Konfirmasi</h3>
+                        <span class="material-icons-outlined">notification_important</span>
+                    </div>
+                    <h1>1</h1>
+                </div>
+        </main>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.5/apexcharts.min.js"></script>
+</body>
+</html>

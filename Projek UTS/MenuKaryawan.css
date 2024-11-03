@@ -1,0 +1,138 @@
+/* Styling umum */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f4f4f9;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+/* Sidebar styling */
+.navbar {
+  width: 250px;
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  padding-top: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-list {
+  list-style: none;
+}
+
+.sidebar-list-item {
+  margin: 15px 0;
+}
+
+.sidebar-list-item a {
+  color: #ecf0f1;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  transition: background-color 0.3s;
+}
+
+.sidebar-list-item a:hover {
+  background-color: #34495e;
+}
+
+.material-icons-outlined {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+/* Container styling */
+.container {
+  flex-grow: 1;
+  padding: 20px 40px;
+}
+
+.container h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.container h2 {
+  font-size: 22px;
+  color: #7f8c8d;
+  margin-bottom: 20px;
+}
+
+/* Table styling */
+.table-container {
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+th {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  font-weight: bold;
+}
+
+tr:hover {
+  background-color: #f4f4f9;
+}
+
+/* Button styling */
+.add-button {
+  padding: 10px 15px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: bold;
+}
+
+.add-button:hover {
+  background-color: #2980b9;
+}
+
+/* Search box styling */
+.search {
+  width: 100%;
+  padding: 8px 10px;
+  margin-top: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+}
+
+/* Action links styling */
+td a {
+  color: #3498db;
+  text-decoration: none;
+  margin: 0 5px;
+  font-weight: bold;
+}
+
+td a:hover {
+  color: #2980b9;
+  text-decoration: underline;
+}
